@@ -2,5 +2,7 @@ export default {
     currentCategory: {
         categoryName: ""
     },
-    categories:[]
+    categories:[],
+    products:[],
+    cart:[]
 }

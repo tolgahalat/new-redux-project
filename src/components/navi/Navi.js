@@ -14,6 +14,7 @@ import {
   DropdownItem,
   NavbarText,
 } from "reactstrap";
+import CartSummery from "../cart/CartSummery";
 
 export default class Navi extends Component {
   constructor(props) {
@@ -46,7 +47,7 @@ export default class Navi extends Component {
                 {/* <Link to="NewForm">New Form</Link> */}
                 </NavLink>
               </NavItem>
-              
+              <CartSummery></CartSummery>
             </Nav>
             
           </Collapse>
