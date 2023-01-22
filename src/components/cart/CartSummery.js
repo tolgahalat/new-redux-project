@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import {
     Badge,
   DropdownItem,
@@ -36,7 +37,7 @@ class CartSummery extends Component {
             </DropdownItem>
           ))}
           <DropdownItem divider></DropdownItem>
-          <DropdownItem>Go to cart</DropdownItem>
+          <DropdownItem><Link to={"/cart"}>Go to cart</Link></DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
     );
