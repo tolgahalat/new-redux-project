@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { Badge, Button, Table } from "reactstrap";
 import { bindActionCreators } from "redux";
 import { addToCart } from "../../redux/actions/cartActions";
@@ -32,7 +33,7 @@ class ProductList extends Component {
         {this.props.products.map(p => (
           <tr key={p.id}>
             <td scope="row">{p.id}</td>
-            <td>{p.productName}</td>
+            <td><Link to={"/saveproduct?productId=" + p.id}>{p.productName}</Link></td>
             <td>{p.unitPrice}</td>
             <td>{p.quantityPerUnit}</td>
             <td>{p.unitsInStock}</td>
